@@ -1,0 +1,21 @@
+<div
+  class="card-background px-6 py-6 box-border border-1 shadow text-black border-yellow-300 rounded-xl mt-4"
+>
+  <div class="flex">
+    <h1 class="font-bold flex-1">{{ name }}</h1>
+    <p class="flex-2">{{ currentDate | customDateFormat: 'dd MMM yyyy' }}</p>
+  </div>
+  <div class="py-6 text-lg font-light">
+    {{ message }}
+  </div>
+  <div class="flex">
+    <h2 class="pt-2 flex-1">
+      <span class="font-light">Email:</span> {{ email }}
+    </h2>
+    <div class="flex-2">
+      <svg-icon key="edit" [size]="size" (click)="editItem()"> </svg-icon>
+      &nbsp;&nbsp;
+      <svg-icon key="delete" [size]="size" (click)="deleteItem()"> </svg-icon>
+    </div>
+  </div>
+</div>

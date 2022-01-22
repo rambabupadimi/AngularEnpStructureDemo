@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/data-access/models",
+  "sourceRoot": "libs/shared/data-access/models/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/data-access/models"],
+      "options": {
+        "jestConfig": "libs/shared/data-access/models/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/data-access/models/src/**/*.ts",
+          "libs/shared/data-access/models/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

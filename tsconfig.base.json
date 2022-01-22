@@ -14,7 +14,36 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@demo-app/shared/data-access/customer-portal-apis": [
+        "libs/shared/data-access/customer-portal-apis/src/index.ts"
+      ],
+      "@demo-app/shared/data-access/models": [
+        "libs/shared/data-access/models/src/index.ts"
+      ],
+      "@demo-app/shared/pipes/date-pipe": [
+        "libs/shared/pipes/date-pipe/src/index.ts"
+      ],
+      "@demo-app/shared/ui/icon": ["libs/shared/ui/icon/src/index.ts"],
+      "@demo-app/shared/ui/input": ["libs/shared/ui/input/src/index.ts"],
+      "@demo-app/shared/ui/spinner": ["libs/shared/ui/spinner/src/index.ts"],
+      "@demo-app/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@demo-app/shell/feature": ["libs/shell/feature/src/index.ts"],
+      "@demo-app/shell/ui/footer": ["libs/shell/ui/footer/src/index.ts"],
+      "@demo-app/shell/ui/header": ["libs/shell/ui/header/src/index.ts"],
+      "@demo-app/shell/ui/layout": ["libs/shell/ui/layout/src/index.ts"],
+      "@demo-app/users/data-access": ["libs/users/data-access/src/index.ts"],
+      "@demo-app/users/feature/details": [
+        "libs/users/feature/details/src/index.ts"
+      ],
+      "@demo-app/users/feature/list": ["libs/users/feature/list/src/index.ts"],
+      "@demo-app/users/feature/shell": [
+        "libs/users/feature/shell/src/index.ts"
+      ],
+      "@demo-app/users/ui/user-record": [
+        "libs/users/ui/user-record/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shell/ui/layout",
+  "sourceRoot": "libs/shell/ui/layout/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shell/ui/layout"],
+      "options": {
+        "jestConfig": "libs/shell/ui/layout/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shell/ui/layout/src/**/*.ts",
+          "libs/shell/ui/layout/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

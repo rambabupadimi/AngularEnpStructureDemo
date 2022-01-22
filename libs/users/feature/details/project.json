@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/users/feature/details",
+  "sourceRoot": "libs/users/feature/details/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/users/feature/details"],
+      "options": {
+        "jestConfig": "libs/users/feature/details/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/users/feature/details/src/**/*.ts",
+          "libs/users/feature/details/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

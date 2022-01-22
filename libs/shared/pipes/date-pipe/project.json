@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/pipes/date-pipe",
+  "sourceRoot": "libs/shared/pipes/date-pipe/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/pipes/date-pipe"],
+      "options": {
+        "jestConfig": "libs/shared/pipes/date-pipe/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/pipes/date-pipe/src/**/*.ts",
+          "libs/shared/pipes/date-pipe/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,106 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// //@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+
+// // $color-primary: (
+// //   // background colors
+// //   50: #fcc917,
+// //   100: #cfa420,
+// //   150: rgba(255, 236, 155, 0.4),
+// //   200: rgba(101, 94, 90, 0.5),
+// //   250: rgba(252, 201, 23, 0.25),
+// //   300: rgba(251, 200, 22, 0.2),
+// //   350: rgba(252, 201, 23, 0.3),
+// //   400: #fdf3cd,
+// //   500: #e8e3e3,
+// //   contrast: (
+// //     // text colors
+// //     50: rgba(0, 0, 0, 0.87),
+// //     100: #655e5a,
+// //     150: rgba(0, 0, 0, 0.8),
+// //     200: rgba(0, 0, 0, 0.4),
+// //     250: #959494
+// //   )
+// // );
+
+// // $color-secondary: (
+// //   // background colors
+// //   50: rgba(0, 0, 0, 0.87),
+// //   100: #219653,
+// //   150: #ffffff,
+// //   200: #fff2c6,
+// //   250: rgba(0, 0, 0, 0.12),
+// //   contrast: (
+// //     // text colors
+// //     50: #ffffff,
+// //     100: #000000,
+// //     150: #c4c4c4,
+// //     200: rgba(0, 0, 0, 0.24),
+// //     250: rgba(0, 0, 0, 0.54)
+// //   )
+// // );
+
+// // $color-error: (
+// //   // background colors
+// //   50: #ff0000,
+// //   100: #e5e5e5,
+// //   105: rgba(255, 0, 0, 0.1),
+// //   contrast: (
+// //     // text colors
+// //     50: #ffffff,
+// //     100: #000000,
+// //     105: #ff0000,
+// //     200: #c10000
+// //   )
+// // );
+
+// $color-primary: mat.define-palette(mat.$indigo-palette, 500);
+// $color-secondary: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// $color-error: mat.define-light-theme(
+//   (
+//     color: (
+//       primary: $my-primary,
+//       accent: $my-accent,
+//     ),
+//   )
+// );
+
+// $theming-material-components-primary: mat-palette($color-primary, 50);
+// $theming-material-components-accent: mat-palette($color-secondary, 50);
+// $theming-material-components-warn: mat-palette($color-error, 50);
+
+// // Create the theme object (a Sass map containing all of the palettes).
+
+// $theming-material-components-theme: mat-light-theme(
+//   $theming-material-components-primary,
+//   $theming-material-components-accent,
+//   $theming-material-components-warn
+// );
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+
+// @include angular-material-theme($theming-material-components-theme);
+// @include app-theme-styles($theming-material-components-theme);
+// /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

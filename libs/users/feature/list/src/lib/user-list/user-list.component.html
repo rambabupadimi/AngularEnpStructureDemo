@@ -1,0 +1,49 @@
+<div class="flow-root">
+  <button
+    class="rounded bg-yellow-400 px-8 py-2 float-right shadow"
+    (click)="createStory()"
+  >
+    Add customer data
+  </button>
+</div>
+<div *ngIf="users$ | async as users">
+  <ng-container *ngFor="let user of users">
+    <demo-app-user-record
+      *ngIf="user"
+      (editItemEvent)="editStory(user.id)"
+      (deleteItemEvent)="deleteStory(user.id)"
+      [message]="user.message"
+      [name]="user.name"
+      [email]="user.email"
+      [phone]="user.phone"
+    ></demo-app-user-record>
+  </ng-container>
+</div>
+<demo-app-spinner></demo-app-spinner>
+
+<!-- 
+
+    class="sm:bg-yellow-700 md:bg-red-700 lg:bg-blue-700 xl:bg-red-500 sm:text-4xl bg-green-500 text-white px-10 py-16 m-12 shadow 
+hover:text-gray-500
+hover:bg-yellow-200
+"
+<div class="grid grid-cols-3 gap-12">
+    <div class="h-24 w-24 bg-red-200"></div>
+    <div class="h-24 w-24 bg-green-200"></div>
+    <div class="h-24 w-24 bg-blue-200"></div>
+    <div class="h-24 w-24 bg-red-200"></div>
+    <div class="h-24 w-24 bg-green-200"></div>
+    <div class="h-24 w-24 bg-blue-200"></div>
+    <div class="h-24 w-24 bg-red-200"></div>
+    <div class="h-24 w-24 bg-green-200"></div>
+    <div class="h-24 w-24 bg-blue-200"></div>
+    <div class="h-24 w-24 bg-red-200"></div>
+    
+</div>
+
+
+<div class= "flex flex-row">
+    <div class="h-96 flex-grow bg-red-500"></div>
+    <div class="h-96 w-40 bg-green-500"></div>
+    <div class="h-96 w-20 bg-yellow-500"></div>
+</div> -->

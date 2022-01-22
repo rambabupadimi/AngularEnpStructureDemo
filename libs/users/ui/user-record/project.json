@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/users/ui/user-record",
+  "sourceRoot": "libs/users/ui/user-record/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/users/ui/user-record"],
+      "options": {
+        "jestConfig": "libs/users/ui/user-record/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/users/ui/user-record/src/**/*.ts",
+          "libs/users/ui/user-record/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

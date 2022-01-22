@@ -1,0 +1,41 @@
+<form [formGroup]="userForm" (ngSubmit)="save()">
+  <mat-form-field appearance="fill" class="form-input width-100 m-b-10">
+    <mat-label class="mat-lable-color">Name</mat-label>
+    <input
+      matInput
+      type="text"
+      class="input-field-color"
+      formControlName="name"
+    />
+    <mat-error> </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea
+      matInput
+      placeholder="Ex. It makes me feel..."
+      formControlName="message"
+    ></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-input width-100 m-b-10">
+    <mat-label class="mat-lable-color">Email</mat-label>
+    <input
+      matInput
+      type="email"
+      class="input-field-color"
+      formControlName="email"
+    />
+    <mat-error> </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Save</button>
+  <button
+    color="primary"
+    mat-button
+    type="button"
+    (click)="cancel()"
+    mat-dialog-close
+  >
+    Cancel
+  </button>
+</form>

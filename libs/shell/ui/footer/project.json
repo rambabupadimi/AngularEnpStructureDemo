@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shell/ui/footer",
+  "sourceRoot": "libs/shell/ui/footer/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shell/ui/footer"],
+      "options": {
+        "jestConfig": "libs/shell/ui/footer/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shell/ui/footer/src/**/*.ts",
+          "libs/shell/ui/footer/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

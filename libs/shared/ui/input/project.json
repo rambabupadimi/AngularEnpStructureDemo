@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui/input",
+  "sourceRoot": "libs/shared/ui/input/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui/input"],
+      "options": {
+        "jestConfig": "libs/shared/ui/input/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui/input/src/**/*.ts",
+          "libs/shared/ui/input/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

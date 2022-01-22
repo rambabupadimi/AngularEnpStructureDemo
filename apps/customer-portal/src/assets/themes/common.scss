@@ -1,0 +1,8 @@
+@use '@angular/material' as mat;
+@use '../../../../../libs/users/ui/user-record/src/lib/users-theme.scss' as
+  users;
+
+@mixin create-theme($custom-ui-theme) {
+  @include mat.all-component-themes($custom-ui-theme);
+  @include users.theme($custom-ui-theme);
+}

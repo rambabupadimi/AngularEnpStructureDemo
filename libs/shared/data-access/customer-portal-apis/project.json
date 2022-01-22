@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/data-access/customer-portal-apis",
+  "sourceRoot": "libs/shared/data-access/customer-portal-apis/src",
+  "prefix": "demo-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/data-access/customer-portal-apis"],
+      "options": {
+        "jestConfig": "libs/shared/data-access/customer-portal-apis/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/data-access/customer-portal-apis/src/**/*.ts",
+          "libs/shared/data-access/customer-portal-apis/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

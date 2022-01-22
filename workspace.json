@@ -1,4 +1,23 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "customer-portal": "apps/customer-portal",
+    "customer-portal-e2e": "apps/customer-portal-e2e",
+    "shared-data-access-customer-portal-apis": "libs/shared/data-access/customer-portal-apis",
+    "shared-data-access-models": "libs/shared/data-access/models",
+    "shared-pipes-date-pipe": "libs/shared/pipes/date-pipe",
+    "shared-ui-icon": "libs/shared/ui/icon",
+    "shared-ui-input": "libs/shared/ui/input",
+    "shared-ui-spinner": "libs/shared/ui/spinner",
+    "shared-utils": "libs/shared/utils",
+    "shell-feature": "libs/shell/feature",
+    "shell-ui-footer": "libs/shell/ui/footer",
+    "shell-ui-header": "libs/shell/ui/header",
+    "shell-ui-layout": "libs/shell/ui/layout",
+    "users-data-access": "libs/users/data-access",
+    "users-feature-details": "libs/users/feature/details",
+    "users-feature-list": "libs/users/feature/list",
+    "users-feature-shell": "libs/users/feature/shell",
+    "users-ui-user-record": "libs/users/ui/user-record"
+  }
 }
